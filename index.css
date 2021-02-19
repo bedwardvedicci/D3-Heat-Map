@@ -1,0 +1,55 @@
+@import "~bootstrap/scss/bootstrap";
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2rem;
+  margin: 25px 0;
+}
+
+h1 > span {
+  font-size: 1.3rem;
+}
+
+#mapWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80%;
+}
+
+.cell:hover {
+  stroke: #000;
+  stroke-width: 1px;
+}
+
+#tooltipContainer {
+  width: 0px;
+  overflow: visible;
+  display: flex;
+  justify-content: center;
+}
+
+#tooltip {
+  white-space: nowrap;
+  background: #000b;
+  padding: 5px;
+  border-radius: 5px;
+  text-align: center;
+  color: #fff;
+}
+
+#map{
+  overflow: visible;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  user-select: none;
+}
