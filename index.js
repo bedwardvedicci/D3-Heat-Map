@@ -3,7 +3,6 @@ import ReactDOM from "react-dom";
 import * as d3 from "d3";
 import "./index.css";
 
-
 window.onload = async () => {
   const url = "https://raw.githubusercontent.com/freeCodeCamp/ProjectReferenceData/master/global-temperature.json";
   const data = await fetch(url);
@@ -197,4 +196,3 @@ const init = (exData) => {
       .attr("fill", d=>thresholdScale(d[0]));
   // Map's Legend ↑↑↑
 }
-init(exData);
